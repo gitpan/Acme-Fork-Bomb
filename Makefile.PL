@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Acme::Fork::Bomb",
   "PREREQ_PM" => {},
-  "VERSION" => "1.0",
+  "VERSION" => "2.0",
   "test" => {
     "TESTS" => "t/*.t"
   }

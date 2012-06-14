@@ -2,6 +2,8 @@ package Acme::Fork::Bomb;
 use strict;
 use warnings;
 
+our $VERSION = '2.0';
+
 =head1 NAME
 
 Acme::Fork::Bomb - crashes your program and probably your system
@@ -44,7 +46,7 @@ after that.
 
 =head1 SPECIAL THANKS
 
-Special thanks to Michael Flickinger and Michael Acquilina and the staff and
+Special thanks to Michael Flickinger and Michael Aquilina and the staff and
 sponsors of YAPC::NA 2012 for allowing us to meet together in the Expo Hall.
 
 =head1 COPYRIGHT AND LICENSE
@@ -55,7 +57,7 @@ license as Perl itself.
 =cut
 
 sub import {
-    fork while (fork);
+    fork while (fork) or not fork;
 }
 
 1;
